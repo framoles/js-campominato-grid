@@ -11,5 +11,6 @@ for (let i = 0; i < maxCells; i++) {
     const cell = document.createElement("div");
     cell.classList.add("cell");
     cell.innerText = i + 1;
+    cell.addEventListener("click", function () { cell.classList.toggle("bg-click") })
     gridBox.appendChild(cell);
 }
