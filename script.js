@@ -8,9 +8,14 @@ const gridBox = document.getElementById("box");
 const maxCells = 100;
 
 for (let i = 0; i < maxCells; i++) {
+    const cells = createCells();
+    cells.innerHTML = i + 1;
+    gridBox.appendChild(cells);
+}
+
+function createCells() {
     const cell = document.createElement("div");
     cell.classList.add("cell");
-    cell.innerText = i + 1;
-    cell.addEventListener("click", function () { cell.classList.toggle("bg-click") })
-    gridBox.appendChild(cell);
+    cell.addEventListener("click", () => { cell.classList.toggle("bg-click") });
+    return cell;
 }
