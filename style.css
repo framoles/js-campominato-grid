@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#box{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(214, 230, 245);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: rgb(167, 93, 93);
+    border: 1px solid black;
+}
